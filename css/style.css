@@ -1,6 +1,6 @@
 /* COLORS */
-/*FONTS*/
 /* MARGINs */
+/*SCREEN SIZES*/
 .contener {
   max-width: 528px;
   margin: 0 auto;
@@ -95,7 +95,6 @@
   font-weight: 450;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.8);
-  max-width: 70%;
 }
 .project__item .project__item-button {
   font-size: 16px;
@@ -114,10 +113,12 @@
 }
 .project__item .project__item-img {
   max-width: 448px;
+  width: 100%;
   margin-top: 48px;
 }
 .project__item .project__item-img img {
   max-width: inherit;
+  width: inherit;
 }
 
 .shots .section-title {
@@ -152,6 +153,27 @@
   content: " " url(/img/arrow-up-right.svg);
 }
 
+@media (max-width: 495px) {
+  .project__item-title-wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .project__item-title-wrapper .project__item-button {
+    align-self: flex-start;
+  }
+  .cases .project__item {
+    padding: 24px 24px 0px 24px;
+  }
+  .cases .project__item-img {
+    margin-top: 38px;
+  }
+  .shots .project__item {
+    padding: 24px 24px 0px 24px;
+  }
+  .shots .project__item-title-wrapper {
+    align-items: flex-start;
+  }
+}
 body {
   background-color: #1E1E1E;
   font-size: 18px;
@@ -159,6 +181,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 140%;
   color: white;
+  margin: 0px 16px 0px 16px;
 }
 
 /* LINKI */

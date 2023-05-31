@@ -46,9 +46,6 @@
       font-weight: 450;
       line-height: 30px;
       color: $secondary;
-
-      max-width:70%;
-      
    }
 
    /*SEE CASE*/
@@ -74,10 +71,12 @@
 
    .project__item-img{
       max-width: 448px;
+      width:100%;
       margin-top: 48px;
 
       img{
          max-width: inherit;
+         width:inherit;
       }
    }
 
