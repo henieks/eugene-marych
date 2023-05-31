@@ -1,0 +1,16 @@
+.header{
+   margin-top: 40px;
+   line-height: 100%;
+
+   .myinfo--wrapper{
+      display: flex;
+      gap: 16px;
+
+      .myinfo__text{
+         
+         .myinfo__text-name{
+            padding-bottom: 10px;
+         }
+      }
+   }
+}
