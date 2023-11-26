@@ -4,7 +4,8 @@
    "description": "",
    "scripts": {
       "start": "parcel index.html",
-      "predeploy": "rmdir /s /q dist && parcel build *.html --public-url https://marych.website/",
+      "build": "parcel build *.html --public-url https://marych.website/",
+      "predeploy": "rm -rf dist && npm run build && cp CNAME ./dist/CNAME",
       "deploy": "gh-pages -d dist"
    },
    "author": "",
