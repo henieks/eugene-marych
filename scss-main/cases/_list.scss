@@ -1,0 +1,20 @@
+.list__item{
+   position: relative;
+}
+
+.list__number{
+   position: absolute;
+
+   left:-24px;
+   font-size: $px14;
+}
+
+@media (max-width:760px){
+   .list__item{
+      display: flex;
+      gap: 24px;
+   }
+   .list__number{
+      position: static;
+   }
+}

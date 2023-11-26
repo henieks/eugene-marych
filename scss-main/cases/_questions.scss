@@ -1,0 +1,33 @@
+.wrapper__questions{
+   display: flex;
+   gap: 12px;
+
+   flex-wrap: wrap;
+
+
+   .question__item{
+      background-color: $plaszka;
+      padding: 16px 19px;
+
+      max-width: 218px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      overflow: hidden;
+      border-radius: 4px;
+
+
+      .question__text{
+         color: $title;
+      }
+   }
+
+   @media (max-width:480px) {
+      .question__item{
+         max-width: none;
+      }
+   }
+}

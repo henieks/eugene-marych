@@ -1,0 +1,76 @@
+/*BODY*/
+body{
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   color:$text;
+   font-weight: 400;
+   line-height: 1.4;
+
+   background-color: $bg;
+}
+
+
+
+//TITTLEs
+h2{
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   font-size: $px32;
+   color:$title;
+   font-weight: 500;
+}
+
+h3{
+   font-family: inherit;
+   font-size: $px20;
+   font-weight: 400;
+   color: $title;
+}
+
+h4{
+   font-family: inherit;
+   font-size: $px16;
+   font-weight: 500;
+   color: $title;
+
+   padding-bottom: 4px;
+}
+
+
+
+//BIRKA
+.birka{
+   font-size: $px12;
+   text-transform: uppercase;
+}
+
+
+
+//WRAPPERS
+//left, right 16px
+.wrapper16px{
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+
+
+//HEADER
+.header{
+   padding-top: 80px;
+
+   &__homepage{
+      padding-top: 60px;
+   }
+}
+
+
+
+//CONTACT MOBILE 450px
+@media (max-width: 450px) {
+   .contact{
+      .links__line{
+         flex-direction: column;
+         align-items: start;
+      }
+   }
+}

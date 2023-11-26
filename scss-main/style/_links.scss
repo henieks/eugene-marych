@@ -1,0 +1,59 @@
+//LINKs__LINE
+.links__line{
+   display: flex;
+   gap:24px;
+}
+
+//LINKs
+a{
+   position: relative;
+
+   text-decoration: none;
+   font-size: $px18;
+   line-height: 1;
+   color:$link;
+
+   padding-bottom: 0.3rem;
+   border-bottom: 2px solid $link_underline;
+
+   &:hover{
+      border-bottom: 2px solid $link;
+   }
+
+   //EXTERNAL LINK
+   &.external-link{
+      padding-right: 18px;
+
+      &::after{
+         display: inline-block;
+         content: url("/img/link-arrow.svg");
+         
+         position: absolute;
+         right: 0px;
+         top: 0px;
+      }
+   }
+
+   //WHITE LINK
+   &.white-link{
+      color:white;
+      border-bottom: 2px solid $outline;
+
+      &:hover{
+         border-bottom: 2px solid rgb(255,255,255);
+      }
+   }
+
+}
+
+@media (max-width: 528px){
+   a{
+      &:hover{
+         border-bottom: 2px solid $link_underline;
+      }
+
+      &.white-link:hover{
+         border-bottom: 2px solid $outline;
+      }
+   }
+}

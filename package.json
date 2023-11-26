@@ -1,0 +1,19 @@
+{
+   "name": "folio",
+   "version": "1.0.0",
+   "description": "",
+   "scripts": {
+      "start": "parcel index.html",
+      "predeploy": "rmdir /s /q dist && parcel build *.html --public-url https://marych.website/",
+      "deploy": "gh-pages -d dist"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "bootstrap": "^5.3.0",
+      "gh-pages": "^5.0.0",
+      "jquery": "^3.7.0",
+      "parcel": "^2.9.1",
+      "popper.js": "^1.16.1"
+   }
+}

@@ -1,0 +1,36 @@
+   //TOOLBAR
+   .toolbar{
+      height: 20px;
+      width:100%;
+
+      background-color: #343434;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 0.5rem;
+      text-transform: uppercase;
+
+      &__title{
+         height: fit-content;
+      }
+
+      .dot__wrapper{
+         position: absolute;
+         left:8px;
+         top:6px;
+
+         display: flex;
+         gap: 4px;
+      }
+      
+      .dot{
+         width:8px;
+         height: 8px;
+
+         border-radius: 100px;
+         background-color: #686866;
+      }
+   }

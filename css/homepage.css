@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
+.contener {
+  max-width: 621px;
+  margin: 0 auto;
+}
+
+.wrapper60px {
+  padding: 60px 0px 60px 0px;
+}
+
+.wrapper__title {
+  padding-bottom: 24px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+.header__info p {
+  font-size: 1.125rem;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.projects__flexwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.projects__item:hover {
+  cursor: pointer;
+}
+.projects__item:hover .portfolio__button {
+  background: rgba(255, 255, 255, 0.16);
+}
+@media (max-width: 500px) {
+  .projects .projects__item {
+    max-height: 320px;
+  }
+}
+.projects__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px 35px 30px;
+}
+@media (max-width: 500px) {
+  .projects .projects__info {
+    padding: 20px 20px;
+  }
+}
+.projects__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .projects .projects__info-text {
+    padding-right: 15px;
+  }
+}
+.projects__caption {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+.projects__name {
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-weight: 600;
+}
+.projects__tag {
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 90%;
+  padding: 5px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.projects__description {
+  color: #B0B0B0;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+@media (max-width: 500px) {
+  .projects .projects__description {
+    font-size: 1.25rem;
+    font-weight: 450;
+  }
+}
+.projects__img {
+  display: flex;
+}
+.projects__img img {
+  width: 100%;
+}

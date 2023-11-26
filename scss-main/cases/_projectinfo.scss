@@ -1,0 +1,23 @@
+.projectinfo{
+
+   &__content{
+      display: flex;
+      gap: 12px;
+   }
+
+   &__item{
+   padding: 16px 18px;
+   background-color: $plaszka;
+
+   border-radius: 4px;
+   font-size: $px14;
+   }
+}
+
+@media (max-width:680px){
+   .projectinfo{
+      &__content{
+         flex-direction: column;
+      }
+   }
+}
