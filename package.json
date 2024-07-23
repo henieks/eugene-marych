@@ -4,7 +4,7 @@
    "description": "",
    "scripts": {
       "start": "parcel *.html",
-      "build": "parcel build *.html --public-url https://marych.website/",
+      "build": "parcel build *.html --public-url https://henieks.github.io/eugene-marych/",
       "predeploy": "rm -rf dist && npm run build",
       "deploy": "gh-pages -d dist"
    },
