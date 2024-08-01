@@ -1,0 +1,25 @@
+.header__homepage {
+   padding-top: 40px;
+}
+
+.header__wrapper {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 134px;
+
+   text-align: center;
+}
+
+.header__info {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+
+   padding-bottom: 48px;
+
+   p {
+      font-size: $px20;
+      color: #fff;
+   }
+}

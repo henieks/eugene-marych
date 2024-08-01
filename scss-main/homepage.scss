@@ -1,6 +1,5 @@
-@import 'style/variables';
-@import 'portfolio/components';
+@import "style/variables";
 
-
-@import 'portfolio/header';
-@import 'portfolio/projects-item';
+@import "homepage/wrappers";
+@import "homepage/header";
+@import "homepage/projects-item";

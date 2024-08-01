@@ -1,0 +1,58 @@
+//TEXT
+@font-face {
+   font-family: "Inter";
+   src: url("/fonts/InterVariable.ttf") format("truetype");
+}
+
+/*BODY*/
+body {
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   color: $text;
+   font-weight: 400;
+   line-height: 1.4;
+}
+
+//TITTLEs
+h1 {
+   font-family: "Inter", sans-serif;
+   font-size: 5rem;
+   color: $title;
+   font-weight: 500;
+   line-height: 100%;
+   letter-spacing: -6%;
+
+   span {
+      color: #ffb800;
+      display: block;
+   }
+}
+
+h2 {
+   font-family: "Inter", sans-serif;
+   font-size: $px32;
+   color: $title;
+   font-weight: 500;
+}
+
+h3 {
+   font-family: inherit;
+   font-size: $px20;
+   font-weight: 400;
+   color: $title;
+}
+
+h4 {
+   font-family: inherit;
+   font-size: $px16;
+   font-weight: 500;
+   color: $title;
+
+   padding-bottom: 4px;
+}
+
+//BIRKA
+.birka {
+   font-size: $px12;
+   text-transform: uppercase;
+}

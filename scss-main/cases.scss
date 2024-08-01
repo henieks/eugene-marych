@@ -1,7 +1,8 @@
-@import 'style/variables';
+@import "style/variables";
 
-@import 'cases/components';
-@import 'cases/desktop';
-@import 'cases/projectinfo';
-@import 'cases/list';
-@import 'cases/questions';
+@import "cases/wrappers";
+@import "cases/header";
+@import "cases/desktop";
+@import "cases/projectinfo";
+@import "cases/list";
+@import "cases/questions";
