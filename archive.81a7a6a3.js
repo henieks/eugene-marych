@@ -1,0 +1,2 @@
+window.addEventListener("load",function(){let e=function(){let e=document.createElement("div");e.style.visibility="hidden",e.style.overflow="scroll",document.body.appendChild(e);let t=document.createElement("div");e.appendChild(t);let d=e.offsetWidth-t.offsetWidth;return document.body.removeChild(e),d}();e>0&&(document.body.classList.add("scroll-compensate"),document.body.style.paddingRight=`${e}px`)});
+//# sourceMappingURL=archive.81a7a6a3.js.map
