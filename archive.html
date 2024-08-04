@@ -11,25 +11,28 @@
    <link rel="stylesheet" href="scss-main/archive.scss">
 
    <link rel="shortcut icon" href="fav.ico">
+
+   <!--Симулирует скрол бар если его нет-->
+   <style>
+      .contener {
+         max-width: 700px;
+      }
+
+      .scroll-compensate {
+         padding-right: 0;
+      }
+   </style>
+   <script src="js/scrollbar.js" defer></script>
 </head>
 
 <body>
 
    <!--HEADER-->
 
-   <section class="header__homepage">
+   <section class="header__archive">
       <div class="wrapper16px">
          <div class="contener">
-
-            <div class="header__wrapper">
-               <nav class="links__line">
-                  <a href="" class="smoothsclr link link--white-link">Projects [7]</a>
-                  <a href="" class="smoothsclr link link--white-link">About</a>
-                  <a href="" class="link link--white-link">Contact</a>
-               </nav>
-               <h1>Archive</h1>
-            </div>
-
+            <h1>Archive</h1>
          </div>
       </div>
    </section>
@@ -40,23 +43,13 @@
       <div class="wrapper16px">
          <div class="contener">
             <div class="wrapper60px">
-               <div class="archive__grid">
+
+               <div class="archive__wrapper">
 
                   <!--HEAD ROW-->
-                  <div class="archive__grid-item">
-                     Year
-                  </div>
-                  <div class="archive__grid-item">
-                     Name
-                  </div>
-                  <div class="archive__grid-item">
-                     Type
-                  </div>
-
-                  <!--1 ROW-->
-                  <a href="">
+                  <div class="archive__grid">
                      <div class="archive__grid-item">
-                        2023
+                        Year
                      </div>
                      <div class="archive__grid-item">
                         Name
@@ -64,14 +57,99 @@
                      <div class="archive__grid-item">
                         Type
                      </div>
+                     <div class="archive__grid-item">
+
+                     </div>
+                  </div>
+
+                  <!--CLEANING-->
+                  <a href="cleaning.html">
+                     <div class="archive__grid">
+                        <div class="archive__grid-item">
+                           2023
+                        </div>
+                        <div class="archive__grid-item">
+                           TiBiSi Cleaning
+                        </div>
+                        <div class="archive__grid-item">
+                           Website for cleaning company
+                        </div>
+                        <div class="archive__grid-item">
+                           
+                        </div>
+                     </div>
+                  </a>
+
+                  <!--UXBERRIES-->
+                  <a href="uxberries.html">
+                     <div class="archive__grid">
+                        <div class="archive__grid-item">
+                           2023
+                        </div>
+                        <div class="archive__grid-item">
+                           UXberries
+                        </div>
+                        <div class="archive__grid-item">
+                           Website concept for student organization
+                        </div>
+                        <div class="archive__grid-item">
+                           
+                        </div>
+                     </div>
+                  </a>
+
+                  <!--STAYA-->
+                  <a href="staya.html">
+                     <div class="archive__grid">
+                        <div class="archive__grid-item">
+                           2022
+                        </div>
+                        <div class="archive__grid-item">
+                           Staya
+                        </div>
+                        <div class="archive__grid-item">
+                           Website concept for smart dog tracker
+                        </div>
+                        <div class="archive__grid-item">
+                           
+                        </div>
+                     </div>
+                  </a>
+
+                  <!--Platform6-->
+                  <a href="platform6.html">
+                     <div class="archive__grid">
+                        <div class="archive__grid-item">
+                           2022
+                        </div>
+                        <div class="archive__grid-item">
+                           Platform6
+                        </div>
+                        <div class="archive__grid-item">
+                           Website concept for startup house
+                        </div>
+                        <div class="archive__grid-item">
+                           
+                        </div>
+                     </div>
                   </a>
 
                </div>
+
             </div>
 
          </div>
       </div>
    </section>
+
+
+
+   <!--NEXT CASE-->
+   <div class="wrapper60px">
+      <div style="display:flex; justify-content:center;"><a href="index.html" class="link link--white-link">
+            Back to portfolio -></a>
+      </div>
+   </div>
 
 
    <script src="js/script.js"></script>

@@ -16,10 +16,10 @@ body {
 //TITTLEs
 h1 {
    font-family: "Inter", sans-serif;
-   font-size: 5rem;
+   font-size: 5.2rem;
    color: $title;
    font-weight: 500;
-   line-height: 100%;
+   line-height: 95%;
    letter-spacing: -6%;
 
    span {
@@ -27,6 +27,7 @@ h1 {
       display: block;
    }
 }
+//MEDIA DLA H1 находится в хедере нужной страницы
 
 h2 {
    font-family: "Inter", sans-serif;
