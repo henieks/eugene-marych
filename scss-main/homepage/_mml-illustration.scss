@@ -1,24 +1,15 @@
-.mml-img-v {
-   position: relative;
-}
-.mml-img-h {
-   position: relative;
-   overflow: hidden;
-}
-
-.mml-bottom-left-icon,
-.mml-bottom-right-icon,
-.mml-top-left-icon,
-.mml-top-right-icon {
+.mml__icon {
    padding: 1.6rem 1.8rem;
-   background-color: rgba(255, 255, 255, 0.05);
+   background-color: rgba(240, 98, 71, 0.8);
    border: 1px solid rgba(255, 255, 255, 0.2);
    display: inline-block;
-   border-radius: 3.5rem;
+   border-radius: 3rem;
+   backdrop-filter: blur(10px);
 
    position: absolute;
 
    transition: all 0.3s;
+
    svg {
       width: 8rem;
       height: auto;
@@ -27,103 +18,146 @@
          stroke-width: 1px;
       }
    }
-}
 
-//Отдельно свгехи___________
+   &--top {
+      top: 30px;
+      left: 35%;
 
-.mml-top-left-icon {
-   backdrop-filter: blur(5px);
+      transform: rotate(-14deg);
+   }
 
-   top: 0px;
-   left: -10%;
+   &--bottom {
+      bottom: 30px;
+      right: 35%;
 
-   transform: rotate(-14deg);
-}
+      transform: rotate(-8deg);
+   }
 
-.mml-top-right-icon {
-   backdrop-filter: blur(5px);
+   &--right {
+      top: 80px;
+      right: 7%;
 
-   top: -30px;
-   right: -12%;
+      transform: rotate(15deg);
 
-   transform: rotate(15deg);
-}
+      svg {
+         width: 10rem;
+      }
+   }
+   &--left {
+      bottom: 80px;
+      left: 5%;
 
-.mml-bottom-left-icon {
-   bottom: -30px;
-   left: -5%;
+      transform: rotate(15deg);
 
-   transform: rotate(20deg);
-}
-
-.mml-bottom-right-icon {
-   bottom: -20px;
-   right: -3%;
-
-   transform: rotate(-8deg);
-}
-
-//MOBILE ______________________________________________________
-
-@media (min-width: 750px) {
-   .projects__item:hover {
-      .mml-bottom-left-icon,
-      .mml-bottom-right-icon,
-      .mml-top-left-icon,
-      .mml-top-right-icon {
-         transform: rotate(0deg);
+      svg {
+         width: 10rem;
       }
    }
 }
 
-@media (max-width: 750px) {
-   .mml-bottom-left-icon,
-   .mml-bottom-right-icon,
-   .mml-top-left-icon,
-   .mml-top-right-icon {
-      padding: 1.5rem 1.7rem;
-      border-radius: 3rem;
+//ANIMATION ______________________________________________________
+@media (min-width: 670px) {
+   .mml:hover {
+      .mml__icon {
+         background-color: rgba(240, 98, 71, 1);
+         &--top {
+            top: 0px;
+            left: -3%;
+         }
+
+         &--bottom {
+            bottom: -20px;
+            right: -5%;
+         }
+
+         &--right {
+            top: 0px;
+            right: -7%;
+         }
+         &--left {
+            bottom: -20px;
+            left: -5%;
+         }
+      }
+   }
+}
+
+//MOBILE ____________________________
+@media (max-width: 670px) {
+   .mml__icon {
+      border-radius: 2rem;
+      background-color: rgba(240, 98, 71, 1);
 
       svg {
          width: 7rem;
       }
+
+      &--top {
+         top: 0px;
+         left: -7%;
+
+         transform: rotate(-5deg);
+      }
+
+      &--bottom {
+         bottom: -20px;
+         right: -5%;
+
+         transform: rotate(-5deg);
+      }
+
+      &--right {
+         top: 0px;
+         right: -7%;
+
+         transform: rotate(5deg);
+      }
+      &--left {
+         bottom: -20px;
+         left: -5%;
+
+         transform: rotate(5deg);
+      }
    }
-   .mml-top-left-icon {
-      left: -5%;
-   }
-   .mml-top-right-icon {
-      right: -6%;
-   }
-   .mml-bottom-left-icon {
-   }
-   .mml-bottom-right-icon {
+
+   .mml .projects__img {
+      padding: 0 3rem;
    }
 }
 
-@media (max-width: 550px) {
-   .mml-img-h {
-      padding: 0 2.5rem;
-   }
-
-   .mml-bottom-left-icon,
-   .mml-bottom-right-icon,
-   .mml-top-left-icon,
-   .mml-top-right-icon {
+@media (max-width: 460px) {
+   .mml__icon {
+      border-radius: 1.5rem;
+      padding: 1rem 1.2rem;
       svg {
-         width: 6rem;
+         width: 5rem;
+      }
+      //TOP
+      &--top {
+         top: 5px;
+      }
+      &--right {
+         top: 5px;
       }
    }
 }
 
-@media (max-width: 400px) {
-   .mml-bottom-left-icon,
-   .mml-bottom-right-icon,
-   .mml-top-left-icon,
-   .mml-top-right-icon {
-      border-radius: 2rem;
-      padding: 1rem 1.3rem;
+@media (max-width: 375px) {
+   .mml__icon {
+      //border-radius: 1.5rem;
+      //padding: 1rem 1rem;
       svg {
          width: 4rem;
+      }
+   }
+}
+
+@media (max-width: 330px) {
+   .mml__icon {
+      //border-radius: 1.5rem;
+      //padding: 1rem 1rem;
+      svg {
+         width: 3rem;
       }
    }
 }

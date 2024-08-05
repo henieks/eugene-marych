@@ -1,5 +1,6 @@
+const svgIconButton = document.getElementById('svgIcon');
 function toggleSvgAndImage() {
-   const svgIcon = document.getElementById('svgIcon');
+   const svgIcon = svgIconButton.querySelector("svg");
    const heroImage = document.querySelector('.hero-image');
 
    if (svgIcon.dataset.toggled === 'true') {
@@ -18,3 +19,4 @@ function toggleSvgAndImage() {
       heroImage.classList.add("show");
    }
 }
+svgIconButton.addEventListener("click", toggleSvgAndImage)

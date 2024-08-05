@@ -23,12 +23,13 @@
    position: relative;
 
    //ICON POSITION
-   svg {
+   button {
       position: absolute;
       top: 0px;
       right: 0px;
 
-      cursor: pointer;
+      background-color: rgb(255, 255, 255, 0);
+      border: 0px;
    }
 
    p {
