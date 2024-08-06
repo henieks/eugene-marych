@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",e=>{let t=document.querySelector(".cleaning-container"),n=document.querySelector(".cleaning");function o(e){let o=t.offsetWidth,i=e.clientX-t.getBoundingClientRect().left;i>=0&&i<=o&&(n.style.transform=`translateX(${-850*(i/o)}px)`)}function i(){window.innerWidth>700?t.addEventListener("mousemove",o):(t.removeEventListener("mousemove",o),n.style.transform="translateX(0px)")}window.addEventListener("resize",i),i()});
+//# sourceMappingURL=index.61e941ed.js.map
