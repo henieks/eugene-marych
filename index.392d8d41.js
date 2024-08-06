@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",e=>{let t=document.getElementById("ridivisa-img__wrapper"),n=t.getElementsByClassName("ridivisa-img");function i(e){for(let t=0;t<n.length;t++)n[t].style.display=t===e?"block":"none"}t.addEventListener("mousemove",e=>{let l=t.offsetWidth,d=e.clientX-t.getBoundingClientRect().left;if(d>=0&&d<=l){let e=l/n.length;i(Math.floor(d/e))}}),t.addEventListener("mouseleave",e=>{i(0)}),i(0)});
+//# sourceMappingURL=index.392d8d41.js.map
