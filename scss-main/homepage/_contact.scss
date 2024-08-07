@@ -1,0 +1,49 @@
+.contact {
+   &__wrapper {
+      font-size: 1.8rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      padding: 200px 0;
+   }
+   &__name {
+      color: rgba(255, 255, 255, 0.7);
+   }
+   &__message {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      align-items: start;
+   }
+   &__item {
+      padding: 20px 25px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+
+      a {
+         color: #49b5ff;
+         text-decoration: none;
+      }
+   }
+}
+
+@media (max-width: 520px) {
+   .contact {
+      &__wrapper {
+         font-size: 5vw;
+         line-height: 120%;
+
+         padding: 140px 0;
+      }
+
+      &__message {
+         gap: 0.5rem;
+      }
+      &__item {
+         padding: 14px 16px;
+      }
+   }
+}
