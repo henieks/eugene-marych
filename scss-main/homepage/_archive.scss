@@ -1,4 +1,4 @@
-.archive {
+.h-archive {
    color: white;
 
    height: 334px;
@@ -47,7 +47,7 @@
 
 //MOBIEL ____________________
 @media (min-width: 621px) {
-   .archive__square {
+   .h-archive__square {
       &:hover {
          transform: translateY(-10px);
       }
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 480px) {
-   .archive {
+   .h-archive {
       height: 220px;
 
       &__square {

@@ -3,7 +3,7 @@
    &__wrapper {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 2rem;
    }
 
    //ITEM
@@ -86,6 +86,9 @@
 
 //HEADER
 @media (max-width: 500px) {
+   .projects__wrapper {
+      gap: 1rem;
+   }
    .projects__header {
       padding: 20px 20px;
    }
