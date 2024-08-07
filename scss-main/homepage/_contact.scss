@@ -1,6 +1,6 @@
 .contact {
    &__wrapper {
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: white;
       display: flex;
       flex-direction: column;
@@ -24,13 +24,17 @@
       border-radius: 1rem;
 
       a {
-         color: #49b5ff;
+         color: #fff;
          text-decoration: none;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+         }
       }
    }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 561px) {
    .contact {
       &__wrapper {
          font-size: 5vw;

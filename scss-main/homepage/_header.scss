@@ -1,5 +1,6 @@
-.header__homepage {
-   padding-top: 40px;
+.header {
+   padding: 40px 0 250px 0;
+   overflow: hidden;
 }
 
 .header__wrapper {
@@ -70,7 +71,7 @@
 
 //MOBILE - 600px
 @media (max-width: 600px) {
-   .header__homepage {
+   .header {
       padding-top: 16px;
    }
    .header__wrapper {

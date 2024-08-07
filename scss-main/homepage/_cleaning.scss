@@ -1,31 +1,69 @@
+.cleaning-container {
+   transition: all 0.2s;
+}
 .cleaning {
    display: flex;
    gap: 24px;
-   margin: 0 32px 32px 32px;
+   padding-top: 24px;
+
+   overflow: hidden;
+
+   position: relative;
 
    &__image {
-      width: 215px;
+      width: 300px;
       height: auto;
+
+      position: absolute;
+      top: 32px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+
+      transition: all 0.2s;
+   }
+
+   &__image-bg {
+      width: 100%;
+      height: auto;
+   }
+}
+
+@media (min-width: 621px) {
+   .cleaning-container:hover {
+      .cleaning__image {
+         top: 0px;
+      }
    }
 }
 
 @media (max-width: 670px) {
    .cleaning {
-      gap: 16px;
-      margin: 0 20px 32px 20px;
-
       &__image {
-         width: 150px;
+         width: 250px;
+      }
+   }
+}
+@media (max-width: 621px) {
+   .cleaning {
+      &__image {
+         top: 16px;
+      }
+   }
+}
+
+@media (max-width: 510px) {
+   .cleaning {
+      &__image {
+         width: 210px;
       }
    }
 }
 
 @media (max-width: 375px) {
    .cleaning {
-      margin: 0 15px 32px 15px;
-
       &__image {
-         width: 110px;
+         width: 170px;
       }
    }
 }

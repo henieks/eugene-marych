@@ -16,6 +16,8 @@
       left: 0;
       right: 0;
       margin: 0 auto;
+
+      transition: transform 0.2s;
    }
 
    &__first {
@@ -44,6 +46,13 @@
 }
 
 //MOBIEL ____________________
+@media (min-width: 621px) {
+   .archive__square {
+      &:hover {
+         transform: translateY(-10px);
+      }
+   }
+}
 
 @media (max-width: 480px) {
    .archive {
