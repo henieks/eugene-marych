@@ -12,6 +12,25 @@
    text-align: center;
 }
 
+//H1 - HOMEPAGE
+h1 {
+   font-size: 5rem;
+   font-weight: 600;
+   line-height: 95%;
+   letter-spacing: -0.05em;
+
+   span {
+      color: #ffb800;
+      display: block;
+   }
+}
+
+@media (max-width: 680px) {
+   h1 {
+      font-size: 11vw;
+   }
+}
+
 //HEADER INFO + ANIMATION
 .header__info {
    display: flex;

@@ -1,4 +1,23 @@
 //HEADER
 .header {
    padding-top: 80px;
+
+   //TITTLEs
+   h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 95%;
+      letter-spacing: -0.05em;
+
+      span {
+         color: #ffb800;
+         display: block;
+      }
+   }
+
+   @media (max-width: 680px) {
+      h1 {
+         font-size: 10vw;
+      }
+   }
 }
