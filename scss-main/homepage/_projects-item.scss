@@ -4,6 +4,8 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      padding: 5rem 0;
    }
 
    //ITEM
@@ -82,11 +84,16 @@
 
 //MOBILE________________________________________________
 
-//HEADER
-@media (max-width: 500px) {
+//WRAPPER
+@media (max-width: 600px) {
    .projects__wrapper {
+      padding: 2rem 0;
       gap: 1rem;
    }
+}
+
+//HEADER
+@media (max-width: 500px) {
    .projects__header {
       padding: 20px 20px;
    }
