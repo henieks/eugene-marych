@@ -1,23 +1,35 @@
 .header {
-   padding: 40px 0 250px 0;
    overflow: hidden;
+
+   height: 100vh;
+
+   .wrapper16px,
+   .contener {
+      height: inherit;
+   }
+
+   nav {
+      padding-top: 40px;
+   }
 }
 
 .header__wrapper {
    display: flex;
-   align-items: center;
    flex-direction: column;
-   gap: 134px;
+   align-items: center;
+
+   height: inherit;
+   justify-content: space-between;
 
    text-align: center;
 }
 
 //H1 - HOMEPAGE
 h1 {
-   font-size: 5rem;
-   font-weight: 600;
+   font-size: 4.9rem;
+   font-weight: 550;
    line-height: 95%;
-   letter-spacing: -0.05em;
+   letter-spacing: -0.06em;
 
    span {
       color: #ffb800;
@@ -25,9 +37,9 @@ h1 {
    }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
    h1 {
-      font-size: 11vw;
+      font-size: 10vw;
    }
 }
 
@@ -35,10 +47,10 @@ h1 {
 .header__info {
    display: flex;
    flex-direction: column;
-   gap: 24px;
+   gap: 16px;
    align-items: center;
 
-   padding-bottom: 48px;
+   margin-bottom: 3rem;
 
    position: relative;
 
@@ -55,7 +67,8 @@ h1 {
    }
 
    p {
-      font-size: $px20;
+      font-size: 20px;
+      line-height: 130%;
    }
 
    // IMAGE + ANIMATION
@@ -69,13 +82,33 @@ h1 {
    }
    .show {
       visibility: visible;
-      top: 100px;
+      top: 90px;
       opacity: 1;
    }
 }
 
-//MOBILE - 750px
-@media (max-width: 680px) {
+//WHAT IS THIS
+.what-is-this {
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.8rem;
+
+   padding-bottom: 40px;
+
+   &__line {
+      width: 1px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.16);
+   }
+   &__text {
+      font-size: 18px;
+   }
+}
+
+//MOBILE - 750px _________________________________________________
+@media (max-width: 750px) {
    .header__info {
       p {
          width: 80vw;
@@ -86,7 +119,9 @@ h1 {
 //MOBILE - 600px
 @media (max-width: 600px) {
    .header {
-      padding-top: 16px;
+      nav {
+         padding-top: 1rem;
+      }
    }
    .header__wrapper {
       align-items: start;
@@ -115,6 +150,15 @@ h1 {
       gap: 1rem;
       p {
          font-size: $px16;
+      }
+   }
+
+   .what-is-this {
+      align-items: start;
+      width: 200px;
+
+      &__text {
+         font-size: 12px;
       }
    }
 }
