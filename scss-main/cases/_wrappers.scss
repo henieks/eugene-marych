@@ -14,11 +14,7 @@
 
 //TITLE PADDING
 .wrapper__title {
-   padding-bottom: 32px;
-
-   &-small {
-      padding-bottom: 32px;
-   }
+   padding-bottom: 20px;
 
    &-tiny {
       padding-bottom: 12px;
@@ -27,6 +23,11 @@
 
 p {
    padding-bottom: 16px;
+}
+
+//PLASZKA WRAPPER
+.plaszka__wrapper {
+   background-color: $plaszka;
 }
 
 //IMG WRAPPER
@@ -40,5 +41,21 @@ p {
 
    img {
       width: 100%;
+   }
+}
+
+// MindMapsLab STRUCTURE GRAPHIC IMAGE wrapper
+.mml-image__wrapper {
+   padding: 45px 116px;
+   background: $plaszka;
+}
+@media (max-width: 600px) {
+   .mml-image__wrapper {
+      padding: 40px 56px;
+   }
+}
+@media (max-width: 400px) {
+   .mml-image__wrapper {
+      padding: 24px 24px;
    }
 }

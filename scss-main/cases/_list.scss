@@ -1,20 +1,26 @@
-.list__item{
-   position: relative;
+.agenda__list {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
 }
 
-.list__number{
-   position: absolute;
+.list__item {
+   //position: relative;
 
-   left:-24px;
+   display: flex;
+   gap: 12px;
+
+   font-size: $px18;
+}
+
+.list__number {
+   // position: absolute;
+   // left: -24px;
+   // top: 2px;
+
+   padding-top: 2.4px;
+
    font-size: $px14;
-}
-
-@media (max-width:760px){
-   .list__item{
-      display: flex;
-      gap: 24px;
-   }
-   .list__number{
-      position: static;
-   }
+   min-width: 15px;
+   text-align: center;
 }

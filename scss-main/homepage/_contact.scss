@@ -23,15 +23,6 @@
       padding: 20px 25px;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 1rem;
-
-      a {
-         color: #fff;
-         text-decoration: none;
-         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-         &:hover {
-            border-bottom: 1px solid rgba(255, 255, 255, 1);
-         }
-      }
    }
    &__item-right {
       width: 100%;

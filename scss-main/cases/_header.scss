@@ -1,12 +1,21 @@
 //HEADER
 .header {
-   padding-top: 80px;
+   padding-top: 160px;
+
+   .link {
+      font-size: 23px;
+   }
+
+   p {
+      font-size: 23px;
+      line-height: 130%;
+   }
 
    //TITTLEs
    h1 {
       font-size: 4rem;
-      font-weight: 550;
-      line-height: 95%;
+      font-weight: 600;
+      line-height: 100%;
       letter-spacing: -0.05em;
 
       span {

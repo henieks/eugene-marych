@@ -1,0 +1,76 @@
+//LOGO BLOCK
+
+.plaszka__wrapper {
+   background: $plaszka;
+}
+.logo-mml-features {
+   display: flex;
+   padding: 32px 0 0 40px;
+
+   justify-content: space-between;
+   gap: 2rem;
+
+   &__items {
+      display: flex;
+      flex-direction: column;
+
+      gap: 32px;
+      margin-right: 2rem;
+   }
+
+   &__item {
+      font-size: $px18;
+      font-weight: 500;
+      line-height: 140%;
+
+      max-width: 234px;
+   }
+
+   &__image {
+      width: 340px;
+      img {
+         width: 100%;
+      }
+   }
+}
+
+//VISUAL AND CONTENT BLOCK GRAPHIC
+.visual-mml-image__wrapper {
+   background-image: url(/img/mml/visual-blok-bg.svg);
+   padding: 40px;
+
+   img {
+      width: 100%;
+   }
+}
+
+//MOBILE ____________________________________________________________
+
+//LOGO
+@media (max-width: 620px) {
+   .logo-mml-features {
+      flex-direction: column;
+
+      padding: 24px 0 0 24px;
+
+      &__items {
+         flex-direction: row;
+         flex-wrap: wrap;
+      }
+
+      &__image {
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 650px) {
+   .visual-mml-image__wrapper {
+      padding: 24px;
+   }
+}
+@media (max-width: 400px) {
+   .visual-mml-image__wrapper {
+      padding: 0px;
+   }
+}
