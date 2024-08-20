@@ -30,3 +30,13 @@
       }
    }
 }
+
+@media (max-width: 450px) {
+   .header {
+      padding-top: 100px;
+
+      p {
+         font-size: 20px;
+      }
+   }
+}
