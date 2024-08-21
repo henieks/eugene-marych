@@ -24,7 +24,7 @@
       }
    }
 }
-
+//WHITE LINKS IN TEXT with underline
 .link--in-text {
    color: #fff;
    text-decoration: none;
@@ -34,6 +34,26 @@
    }
 }
 
+.project-link {
+   padding-top: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 3px;
+
+   div {
+      font-size: 12px;
+      color: rgb(255, 255, 255, 0.5);
+   }
+}
+
+//LINK in row line
+.links__line {
+   display: flex;
+   gap: 24px;
+}
+
+// MOBILE _____________________________________________________
 @media (max-width: 528px) {
    .link {
       &:hover {
@@ -44,10 +64,4 @@
          border-bottom: 2px solid $outline;
       }
    }
-}
-
-//LINKs__WRAPPER
-.links__line {
-   display: flex;
-   gap: 24px;
 }
