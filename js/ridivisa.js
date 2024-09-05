@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
    container.addEventListener('mouseleave', (e) => {
       // Optionally, show the first or last image when the mouse leaves the container
-      showImage(0);
+      showImage(1);
    });
 
    // Initial display
-   showImage(0);
+   showImage(1);
 });

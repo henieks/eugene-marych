@@ -1,0 +1,53 @@
+.margin-content {
+   position: relative;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      position: absolute;
+
+      &--left {
+         right: 110%;
+         .margin-content__arrow {
+            position: relative;
+            right: -50%;
+         }
+      }
+
+      &--right {
+         left: 110%;
+         align-items: end;
+         .margin-content__arrow {
+            position: relative;
+            right: 50%;
+         }
+      }
+   }
+   &__text {
+      font-size: 23px;
+      line-height: 130%;
+   }
+   &__arrow {
+   }
+}
+
+@media (max-width: 1160px) {
+   .margin-content {
+      &__wrapper {
+         position: relative;
+         right: 0;
+         left: 0;
+
+         align-items: start;
+
+         padding-bottom: 1rem;
+      }
+      &__text {
+         font-size: 20px;
+      }
+      &__arrow {
+         display: none;
+      }
+   }
+}

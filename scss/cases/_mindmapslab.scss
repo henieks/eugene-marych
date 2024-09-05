@@ -34,19 +34,26 @@
    }
 }
 
-//VISUAL AND CONTENT BLOCK GRAPHIC
-.visual-mml-image__wrapper {
-   background-image: url(/img/mml/visual-blok-bg.svg);
-   padding: 40px;
+// MindMapsLab STRUCTURE GRAPHIC IMAGE wrapper
+.mml-image__wrapper {
+   width: 100%;
 
-   display: flex;
-
-   img {
-      width: 100%;
-   }
+   padding: 45px 116px;
+   background: $plaszka;
 }
 
 //MOBILE ____________________________________________________________
+
+@media (max-width: 600px) {
+   .mml-image__wrapper {
+      padding: 40px 56px;
+   }
+}
+@media (max-width: 400px) {
+   .mml-image__wrapper {
+      padding: 24px 24px;
+   }
+}
 
 //LOGO
 @media (max-width: 620px) {
@@ -63,16 +70,5 @@
       &__image {
          width: 100%;
       }
-   }
-}
-
-@media (max-width: 650px) {
-   .visual-mml-image__wrapper {
-      padding: 24px;
-   }
-}
-@media (max-width: 400px) {
-   .visual-mml-image__wrapper {
-      padding: 0px;
    }
 }

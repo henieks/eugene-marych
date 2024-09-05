@@ -47,6 +47,11 @@ h3 {
 //Paragraps
 p {
    font-size: $px18;
+
+   &.text-big {
+      font-size: 23px;
+      line-height: 130%;
+   }
 }
 
 //BIRKA
@@ -55,4 +60,12 @@ p {
    text-transform: uppercase;
 
    font-weight: 500;
+}
+
+@media (max-width: 450px) {
+   p {
+      &.text-big {
+         font-size: 20px;
+      }
+   }
 }

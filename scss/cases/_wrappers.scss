@@ -1,5 +1,5 @@
 .contener {
-   max-width: 680px;
+   max-width: 692px;
    width: 100%;
    margin: 0 auto;
 
@@ -14,7 +14,7 @@
 
 //TITLE PADDING
 .wrapper__title {
-   padding-bottom: 20px;
+   padding-bottom: 1rem;
 
    &-tiny {
       padding-bottom: 12px;
@@ -44,11 +44,6 @@ p {
    }
 }
 
-// MindMapsLab STRUCTURE GRAPHIC IMAGE wrapper
-.mml-image__wrapper {
-   padding: 45px 116px;
-   background: $plaszka;
-}
 @media (max-width: 600px) {
    .mml-image__wrapper {
       padding: 40px 56px;
