@@ -1,7 +1,7 @@
 .contact {
    //background-color: rgba(255, 255, 255, 0.03);
    &__wrapper {
-      font-size: 30px;
+      font-size: 28px;
       color: white;
       display: flex;
       flex-direction: column;
@@ -21,7 +21,7 @@
    }
    &__item {
       padding: 20px 25px;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.08);
       border-radius: 1rem;
    }
    &__item-right {
