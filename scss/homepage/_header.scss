@@ -11,10 +11,6 @@
    padding: 3rem 0 5rem 0;
 
    text-align: center;
-
-   .link--white-link {
-      letter-spacing: -0.03em;
-   }
 }
 
 //H1 - HOMEPAGE
@@ -22,7 +18,7 @@ h1 {
    font-size: 4.4rem;
    font-weight: 600;
    line-height: 97%;
-   letter-spacing: -0.06em;
+   letter-spacing: -0.07em;
 
    span {
       color: #ffb800;
@@ -62,7 +58,6 @@ h1 {
    p {
       font-size: 20px;
       line-height: 120%;
-      letter-spacing: -0.03em;
    }
 
    // IMAGE + ANIMATION
@@ -98,7 +93,6 @@ h1 {
       font-size: 18px;
       line-height: 120%;
       color: rgb(255, 255, 255, 0.5);
-      letter-spacing: -0.03em;
    }
 }
 

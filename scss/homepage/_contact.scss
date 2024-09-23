@@ -1,13 +1,13 @@
 .contact {
    //background-color: rgba(255, 255, 255, 0.03);
    &__wrapper {
-      font-size: 28px;
+      font-size: 25px;
       color: white;
       display: flex;
       flex-direction: column;
       gap: 1rem;
 
-      padding: 4rem 0 10rem 0;
+      padding: 6rem 0 11rem 0;
    }
    &__name {
       color: rgba(255, 255, 255, 0.7);
@@ -20,7 +20,7 @@
       align-items: start;
    }
    &__item {
-      padding: 20px 25px;
+      padding: 19px 25px 20px 25px;
       background-color: rgba(255, 255, 255, 0.08);
       border-radius: 1rem;
    }

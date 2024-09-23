@@ -24,8 +24,7 @@ body {
 //TITLES
 h2 {
    font-size: 2rem;
-   font-weight: 600;
-   letter-spacing: -0.03em;
+   font-weight: 650;
 
    line-height: 100%;
 }
@@ -33,8 +32,6 @@ h2 {
 h3 {
    font-size: $px20;
    font-weight: 600;
-
-   letter-spacing: -0.03em;
 }
 
 .projectinfo__title {
@@ -47,10 +44,11 @@ h3 {
 //Paragraps
 p {
    font-size: $px18;
+   line-height: 130%;
 
    &.text-big {
       font-size: 25px;
-      line-height: 130%;
+      line-height: 120%;
    }
 }
 
