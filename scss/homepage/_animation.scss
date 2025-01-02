@@ -1,0 +1,38 @@
+/* Описание анимации */
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.portfolio {
+   &__grid div {
+      opacity: 0; /* Скрываем блоки по умолчанию */
+      transform: translateY(20px); /* Сдвиг вниз для эффекта движения */
+      animation: fadeIn 0.5s ease-out forwards; /* Анимация */
+   }
+
+   &__grid > div:nth-child(1) {
+      animation-delay: 0.1s;
+   }
+   &__grid > div:nth-child(2) {
+      animation-delay: 0.3s;
+   }
+   &__grid > div:nth-child(3) {
+      animation-delay: 0.4s;
+   }
+   &__grid > div:nth-child(4) {
+      animation-delay: 0.5s;
+   }
+   &__grid > div:nth-child(5) {
+      animation-delay: 0.6s;
+   }
+   &__grid > div:nth-child(6) {
+      animation-delay: 0.7s;
+   }
+}
