@@ -11,6 +11,13 @@
    }
 }
 
+@font-face {
+   font-family: "IBMPlexMono"; /* Укажите произвольное название шрифта */
+   src: url("/IBMPlexMono-Regular.ttf") format("truetype");
+   font-weight: normal; /* Задайте начертание (normal, bold, etc.) */
+   font-style: normal; /* Задайте стиль (normal, italic, etc.) */
+}
+
 /*BODY*/
 body {
    font-size: 16px;

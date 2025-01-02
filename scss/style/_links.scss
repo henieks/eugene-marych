@@ -1,3 +1,25 @@
+//Portfolio Link
+.portfolio__link {
+   color: #fff;
+   text-decoration: none;
+   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+
+   text-wrap: nowrap;
+
+   &:hover {
+      border-bottom: 1px solid #fff;
+   }
+
+   &--nav {
+      color: #ffbf00;
+      border-bottom: 1px solid rgb(255, 191, 0, 0.1);
+
+      &:hover {
+         border-bottom: 1px solid rgb(255, 191, 0);
+      }
+   }
+}
+
 //LINK
 .link {
    position: relative;
@@ -8,19 +30,19 @@
    color: $link;
 
    padding-bottom: 0.2rem;
-   border-bottom: 2px solid $link_underline;
+   border-bottom: 1px solid $link_underline;
 
    &:hover {
-      border-bottom: 2px solid $link;
+      border-bottom: 1px solid $link;
    }
 
    //WHITE LINK
    &--white-link {
       color: white;
-      border-bottom: 2px solid $outline;
+      border-bottom: 1px solid $outline;
 
       &:hover {
-         border-bottom: 2px solid rgb(255, 255, 255);
+         border-bottom: 1px solid rgb(255, 255, 255);
       }
    }
 }
