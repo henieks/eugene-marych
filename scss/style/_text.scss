@@ -1,4 +1,4 @@
-//TEXT
+//FONT______________________________________________
 :root {
    font-family: Inter, sans-serif;
    font-feature-settings:
@@ -18,59 +18,48 @@
    font-style: normal; /* Задайте стиль (normal, italic, etc.) */
 }
 
-/*BODY*/
+//BODY______________________________________________
 body {
-   font-size: 16px;
-   color: #ececec;
+   color: $white;
    font-weight: 400;
-   line-height: 1.4;
+   line-height: 140%;
+   letter-spacing: -0.02em;
+   font-size: clamp(1rem, 1.17vw, 100rem);
 }
-
-//H1 находится в хедерах
-
-//TITLES
-h2 {
-   font-size: 2rem;
-   font-weight: 600;
-
-   line-height: 100%;
-}
-
-h3 {
-   font-size: $px20;
-   font-weight: 600;
-}
-
-.projectinfo__title {
-   font-size: $px16;
-   font-weight: 600;
-
-   padding-bottom: 4px;
-}
-
-//Paragraps
-p {
-   font-size: $px18;
-   line-height: 130%;
-
-   &.text-big {
-      font-size: 25px;
-      line-height: 120%;
+//950
+@media (max-width: 950px) {
+   body {
+      font-size: clamp(14px, 1.8vw, 100rem);
    }
 }
 
-//BIRKA
-.birka {
-   font-size: $px12;
-   text-transform: uppercase;
+//HEADING 1______________________________________________
+h1 {
+   font-size: clamp(56px, 5.3vw, 1000px);
+   font-weight: 400;
+   line-height: 100%;
+   letter-spacing: -0.06em;
 
-   font-weight: 500;
+   span {
+      color: $accent;
+   }
+}
+@media (max-width: 950px) {
+   h1 {
+      font-size: clamp(40px, 6vw, 100px);
+   }
 }
 
-@media (max-width: 450px) {
-   p {
-      &.text-big {
-         font-size: 20px;
-      }
+//Birks__________________________________________________
+.birka {
+   font-family: IBMPlexMono;
+   font-size: clamp(13px, 1vw, 100rem);
+   color: $white;
+   text-transform: uppercase;
+}
+
+@media (max-width: 950px) {
+   .birka {
+      font-size: clamp(12px, 1.5vw, 100rem);
    }
 }

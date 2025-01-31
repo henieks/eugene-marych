@@ -1,0 +1,46 @@
+.portfolio {
+   overflow: hidden;
+   font-weight: 400;
+
+   &__wrapper {
+      height: 100dvh;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      //grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr 0.8fr 1fr;
+      gap: 2rem;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__core-job-name {
+      grid-column: 1 / span 2;
+   }
+}
+
+//950px _____________________
+@media (max-width: 950px) {
+   .portfolio {
+      &__wrapper {
+         height: auto;
+      }
+
+      &__grid {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+      }
+      &__core-job-name {
+         flex: 1;
+      }
+      &__navigation {
+         order: 4;
+      }
+      &__contact {
+         order: 5;
+      }
+   }
+}

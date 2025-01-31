@@ -1,0 +1,15 @@
+.slides {
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      padding: 13vw 0.5rem;
+   }
+   &__item {
+      display: flex;
+      img {
+         width: 100%;
+      }
+   }
+}

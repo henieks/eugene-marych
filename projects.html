@@ -4,77 +4,65 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Eugene Marych</title>
+   <title>Projects</title>
 
    <link rel="preconnect" href="https://rsms.me/">
    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
    <link rel="stylesheet" href="scss/style.scss">
-   <link rel="stylesheet" href="scss/homepage.scss">
+   <link rel="stylesheet" href="scss/projects.scss">
 
    <link rel="shortcut icon" href="fav.ico">
 
-   <!--Симулирует скрол бар если его нет-->
-   <style>
-      .contener {
-         max-width: 700px;
-      }
-
-      .scroll-compensate {
-         padding-right: 0;
-      }
-   </style>
-   <script src="js/scrollbar.js" defer></script>
 </head>
 
 <body>
-
+   <!--BUTTON CLOSE-->
+   <div class="close-button" onclick="location.href='index.html';">
+      <div>←</div>
+   </div>
 
    <section class="portfolio">
-      <div class="portfolio__padding">
-         <div class="archive">
-            <!-- BACK -->
-            <div class="back-button"><a href="index.html" class="link link--white-link">
-                  back</a>
-            </div>
+      <div class="padding-global padding-global--projects">
+         <div class="projects">
 
-            <!-- ARCHIVE HEDDING -->
+            <!-- projects HEDDING -->
             <div>
-               <h1 style="padding-top: 2rem;">Projects</h1>
+               <h1 class="a-nr1">Projects</h1>
             </div>
 
-            <!-- ARCHIVE ITEM -->
-            <div class="archive__wrapper">
+            <!-- projects ITEM -->
+            <div class="projects__wrapper a-nr2">
 
                <!--HEAD ROW-->
-               <div class="archive__grid">
-                  <div class="archive__grid-item" style="color:rgb(255,255,255,0.5)">
+               <div class="projects__grid">
+                  <div class="projects__grid-item" style="color:rgb(255,255,255,0.5)">
                      Year
                   </div>
-                  <div class="archive__grid-item" style="color:rgb(255,255,255,0.5)">
+                  <div class="projects__grid-item" style="color:rgb(255,255,255,0.5)">
                      Client / Sector
                   </div>
-                  <div class="archive__grid-item" style="color:rgb(255,255,255,0.5)">
+                  <div class="projects__grid-item" style="color:rgb(255,255,255,0.5)">
                      Type
                   </div>
-                  <div class="archive__grid-item">
-
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
                   </div>
                </div>
 
                <!--MindMapsLab-->
                <a href="mindmapslab.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
+                  <div class="projects__grid">
+                     <div class="projects__grid-item">
                         2024
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         Educational organization
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         Website, Branding
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         
                      </div>
                   </div>
@@ -82,137 +70,136 @@
 
                <!--RIDIVISA-->
                <a href="ridivisa.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
+                  <div class="projects__grid">
+                     <div class="projects__grid-item">
                         2024
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         Employment Agency
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         Website
                      </div>
-                     <div class="archive__grid-item">
+                     <div class="projects__grid-item">
                         
                      </div>
                   </div>
                </a>
 
                <!--INSTRUCTION-->
-               <a href="cleaning-instruction.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2024
-                     </div>
-                     <div class="archive__grid-item">
-                        Cleaning company
-                     </div>
-                     <div class="archive__grid-item">
-                        Digital manual
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href="cleaning-instruction.html"> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2024
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Cleaning company
+                  </div>
+                  <div class="projects__grid-item">
+                     Digital manual
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
                <!--CLEANING-->
-               <a href="cleaning.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2023
-                     </div>
-                     <div class="archive__grid-item">
-                        Cleaning company
-                     </div>
-                     <div class="archive__grid-item">
-                        Website, Service, Branding
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href="cleaning.html"> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2023
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Cleaning company
+                  </div>
+                  <div class="projects__grid-item">
+                     Website, Service, Branding
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
                <!--UXBERRIES-->
-               <a href="uxberries.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2023
-                     </div>
-                     <div class="archive__grid-item">
-                        Student Organization
-                     </div>
-                     <div class="archive__grid-item">
-                        Website concept
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href="uxberries.html"> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2023
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Student Organization
+                  </div>
+                  <div class="projects__grid-item">
+                     Website concept
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
                <!--VOLUUM-->
-               <a href="voluum-diagram.pdf">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2023
-                     </div>
-                     <div class="archive__grid-item">
-                        Voluum software
-                     </div>
-                     <div class="archive__grid-item">
-                        Infographic
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href=""> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2023
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Voluum software
+                  </div>
+                  <div class="projects__grid-item">
+                     Infographic
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
                <!--STAYA-->
-               <a href="staya.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2022
-                     </div>
-                     <div class="archive__grid-item">
-                        Pet technology company
-                     </div>
-                     <div class="archive__grid-item">
-                        Website concept
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href="staya.html"> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2022
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Pet technology company
+                  </div>
+                  <div class="projects__grid-item">
+                     Website concept
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
                <!--Platform6-->
-               <a href="platform6.html">
-                  <div class="archive__grid">
-                     <div class="archive__grid-item">
-                        2022
-                     </div>
-                     <div class="archive__grid-item">
-                        Startup House
-                     </div>
-                     <div class="archive__grid-item">
-                        Website concept
-                     </div>
-                     <div class="archive__grid-item">
-                        
-                     </div>
+               <!-- <a href="platform6.html"> -->
+               <div class="projects__grid">
+                  <div class="projects__grid-item">
+                     2022
                   </div>
-               </a>
+                  <div class="projects__grid-item">
+                     Startup House
+                  </div>
+                  <div class="projects__grid-item">
+                     Website concept
+                  </div>
+                  <div class="projects__grid-item" style="opacity: 0;">
+                     
+                  </div>
+               </div>
+               <!-- </a> -->
 
             </div>
          </div>
       </div>
    </section>
 
-
-   <script src="js/script.js"></script>
+   <script type="module" src="js/onload-animation.js"></script>
 </body>
 
 </html>

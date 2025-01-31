@@ -1,12 +1,26 @@
 /*BODY*/
 body {
    background-color: $bg;
-   letter-spacing: -0.03em;
 }
 
-//WRAPPERS
-//left, right 16px
-.wrapper16px {
-   padding-left: 16px;
-   padding-right: 16px;
+//PADING-GLOBAL_______________________________________________________
+.padding-global {
+   height: 100%;
+   padding: 2.5rem 2.5rem;
 }
+
+//650px-exeption
+@media (max-width: 650px) {
+   .padding-global--projects {
+      padding-top: 0rem;
+   }
+}
+
+//550px
+@media (max-width: 550px) {
+   .padding-global {
+      padding: 1rem 1rem;
+   }
+}
+
+//__________________________________________________________________

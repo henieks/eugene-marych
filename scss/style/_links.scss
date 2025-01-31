@@ -1,15 +1,16 @@
-//Portfolio Link
-.portfolio__link {
-   color: #fff;
+.link {
+   font-family: IBMPlexMono;
+   font-size: clamp(13px, 1vw, 100rem);
+   color: $white;
+   text-transform: uppercase;
+
    text-decoration: none;
-   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+   border-bottom: 1px solid $white-o10;
 
    text-wrap: nowrap;
 
-   //padding-bottom: 2px;
-
    &:hover {
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid $white;
    }
 
    &--nav {
@@ -22,70 +23,8 @@
    }
 }
 
-//LINK
-.link {
-   position: relative;
-
-   text-decoration: none;
-   font-size: $px18;
-   line-height: 1;
-   color: $link;
-
-   padding-bottom: 0.2rem;
-   border-bottom: 1px solid $link_underline;
-
-   &:hover {
-      border-bottom: 1px solid $link;
-   }
-
-   //WHITE LINK
-   &--white-link {
-      color: white;
-      border-bottom: 1px solid $outline;
-
-      &:hover {
-         border-bottom: 1px solid rgb(255, 255, 255);
-      }
-   }
-}
-//WHITE LINKS IN TEXT with underline
-.link--in-text {
-   color: #fff;
-   text-decoration: none;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-   &:hover {
-      border-bottom: 1px solid rgba(255, 255, 255, 1);
-   }
-}
-
-.project-link {
-   padding-top: 1rem;
-   display: flex;
-   flex-direction: column;
-   align-items: start;
-   gap: 3px;
-
-   div {
-      font-size: 12px;
-      color: rgb(255, 255, 255, 0.5);
-   }
-}
-
-//LINK in row line
-.links__line {
-   display: flex;
-   gap: 24px;
-}
-
-// MOBILE _____________________________________________________
-@media (max-width: 528px) {
+@media (max-width: 950px) {
    .link {
-      &:hover {
-         border-bottom: 2px solid $link_underline;
-      }
-
-      &--white-link:hover {
-         border-bottom: 2px solid $outline;
-      }
+      font-size: clamp(12px, 1.5vw, 100rem);
    }
 }

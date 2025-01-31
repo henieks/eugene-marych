@@ -1,60 +1,18 @@
-//PORTFOLIO BUTTON
-.portfolio__button {
+.close-button {
    display: flex;
-   width: 50px;
-   height: 50px;
-   //padding: 19.38px;
-   justify-content: center;
-   align-items: center;
-   gap: 13.843px;
-   flex-shrink: 0;
-   border-radius: 200px;
-   border: 1px solid $outline;
-
-   transition: background-color 150ms ease-in;
-
-   &-case {
-      position: fixed;
-
-      background-color: rgba(16, 16, 16, 0.16);
-      backdrop-filter: blur(16px);
-
-      left: 10vw;
-      top: 50px;
-
-      z-index: 1000;
-
-      &:hover {
-         cursor: pointer;
-         background: rgba(255, 255, 255, 0.16);
-      }
+   justify-content: flex-start;
+   > div {
+      padding: 2.5rem;
+      cursor: pointer;
+      font-size: clamp(1rem, 1.5vw, 100rem);
    }
 }
 
-@media (max-width: 860px) {
-   .portfolio__button-case {
-      left: 16px;
-      top: 25px;
-   }
-}
-@media (max-width: 400px) {
-   .portfolio__button {
-      display: flex;
-      width: 35px;
-      height: 35px;
-      justify-content: center;
-      align-items: center;
-      gap: 13.843px;
-      flex-shrink: 0;
-
-      border-radius: 200px;
-      border: 1px solid $outline;
-
-      transition: background-color 150ms ease-in;
-
-      img {
-         width: 14px;
-         height: auto;
+//550px _____________________
+@media (max-width: 550px) {
+   .close-button {
+      > div {
+         padding: 1rem;
       }
    }
 }

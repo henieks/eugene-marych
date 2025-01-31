@@ -1,23 +1,11 @@
 .portfolio {
-   //H1 - HOMEPAGE
-   h1 {
-      font-size: clamp(32px, 5.3vw, 100px);
-      font-weight: 450;
-      line-height: 100%;
-      letter-spacing: -0.06em;
-
-      span {
-         color: $accent;
-      }
-   }
-
    &__big-job {
       width: 25.5vw;
    }
 
    &__core-job-details {
+      width: 100%;
       padding-top: 6.3vw;
-      //text-wrap: nowrap;
       grid-row: span 2;
    }
 }
@@ -25,11 +13,6 @@
 //950px _____________________
 @media (max-width: 950px) {
    .portfolio {
-      font-size: clamp(14px, 2vw, 100rem);
-
-      h1 {
-         font-size: clamp(40px, 7.3vw, 100px);
-      }
       &__big-job {
          width: 45vw;
       }

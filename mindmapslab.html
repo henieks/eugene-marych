@@ -2,222 +2,86 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>MindMapsLab</title>
 
-   <link rel="preconnect" href="https://rsms.me/">
-   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+   <link rel="preconnect" href="https://rsms.me/" />
+   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-   <link rel="stylesheet" href="scss/style.scss">
-   <link rel="stylesheet" href="scss/cases.scss">
+   <link rel="stylesheet" href="scss/style.scss" />
+   <link rel="stylesheet" href="scss/projects.scss" />
 
-   <link rel="shortcut icon" href="fav.ico">
+   <link rel="shortcut icon" href="fav.ico" />
+   <script src="js/emerge.js"></script>
+
 </head>
 
 <body>
-
-
    <!--BUTTON CLOSE-->
-   <div class="contener">
-      <div class="portfolio__button portfolio__button-case" onclick="location.href='projects.html';">
-         <img src="img/cleaning/close.svg" alt="close the case">
-      </div>
+   <div class="close-button" onclick="location.href='projects.html';">
+      <div>←</div>
    </div>
-
-
-
-   <!--HERO TITLE-->
    <section class="header">
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-               <div class="header__content">
-                  <div class="wrapper__title">
-                     <h1>Website and branding for MindMapsLab</h1>
-                  </div>
-                  <p>MindMapsLab is a growing organization that currently offers educational
-                     products on personal efficiency techniques. The company's first website was created by the founder
-                     on WordPress, but it became outdated.</p>
-                  <p>My task was to present the products more informatively to the target audience, improve navigation,
-                     and create a new visual design.</p>
-                  <div class="project-link">
-                     <a href="https://www.mindmapslab.pl" target="_blank" class="link">mindmapslab.pl ↗</a>
-                     <div>Implemented on Webflow by me</div>
-                  </div>
+      <div class="padding-global padding-global--projects">
+         <div class="header__grid">
+            <h1 class="a-nr1">MindMapsLab</h1>
+            <div class="header__description a-nr2">
+               <div class="header__subheading">
+                  MindMapsLab is a growing organization that offers educational
+                  products on personal and professional development.
                </div>
+               <div>
+                  One of those products is the Academy, a course on how to use the
+                  mind mapping technique in private and professional life, for
+                  better efficiency.
+               </div>
+               <div>
+                  My job was to showcase the organization and its course. The result
+                  is a website built on Webflow, with unique visual style, clear
+                  communication, and the ability to expand easily with future
+                  products.
+               </div>
+            </div>
+            <div class="header__link a-nr3">
+               <a class="link link--nav" href="https://www.mindmapslab.pl">mindmapslab.pl ↗</a>
             </div>
          </div>
       </div>
    </section>
 
-   <!--DESKTOP-->
-   <section class="desktop">
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-               <div class="desktop__content">
+   <section class="slides a-nr4">
+      <div class="slides__wrapper">
+         <div class="slides__item emerge"><img src="img/mml/1.avif" alt="" /></div>
+         <div class="slides__item emerge"><img src="img/mml/2.avif" alt="" /></div>
+         <div class="slides__item emerge"><img src="img/mml/3.avif" alt="" /></div>
+         <div class="slides__item emerge"><img src="img/mml/4.avif" alt="" /></div>
+         <div class="slides__item emerge"><img src="img/mml/5.avif" alt="" /></div>
+         <div class="slides__item emerge"><img src="img/mml/6.avif" alt="" /></div>
+      </div>
+   </section>
 
-                  <img src="img/mml/hero-mml.avif" alt="desktop">
-
+   <section class="footer a-nr5">
+      <div class="padding-global padding-global--projects">
+         <div class="footer__wrapper">
+            <div class="footer__CTA-wrapper">
+               <div class="footer__CTA-item birka">Need a website?</div>
+               <div class="footer__CTA-item">
+                  <a href="https://calendly.com/marycheugene/discovery-consultation-call" class="link link--nav">Let’s
+                     talk ↗</a>
                </div>
+               <div class="footer__CTA-item">
+                  <a href="mailto:eugene.marych@gmail.com" class="link link--nav">eugene.marych@gmail.com</a>
+               </div>
+            </div>
+            <div class="footer__next-project">
+               <a href="ridivisa.html" class="next-project-link">See my next project →</a>
             </div>
          </div>
       </div>
    </section>
 
-   <!--WEBSITE STRUCTURE-->
-   <section id="structure">
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-               <div class="structure__wrapper">
-                  <div class="wrapper__title">
-                     <h2>Website structure</h2>
-                  </div>
-                  <p>The client planned to promote products through social media and blog. I created a structure
-                     where each page has its own use case, which helps to promote the products separately and makes
-                     navigation intuitive. </p>
-                  <div class="wrapper__image">
-                     <div class="mml-image__wrapper"><img src="img/mml/website_structure.svg" alt="Website structure">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <!-- ACADEMIA__MOCKUPS -->
-   <section>
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-
-               <div class="wrapper__title">
-                  <h2>Academy Website</h2>
-               </div>
-               <p>MindMapsLab Academy is a course designed to improve learning, analysis, planning, and
-                  creativity skills through the mind mapping technique. The course will be beneficial for people who
-                  want to improve these skills for career growth or
-                  personal development.</p>
-               <p>I developed an understanding of the topic and the target audience's problems, wrote all the website
-                  content
-                  in Polish, designed a
-                  responsive visual layout, and implemented it on Webflow. Additionally, I met with the client weekly to
-                  present solutions and align expectations, ensuring everyone was satisfied with the outcome.</p>
-               <a href="https://www.mindmapslab.pl/akademia" target="_blank" class="link">See Academy website ↗</a>
-               <div class="device-mockups device-mockups--top3">
-                  <div class="device-mockups__desktop"><img src="img/mml/academia-desktop.avif" alt="akademia-desktop">
-                  </div>
-                  <div class="device-mockups__mobile"><img src="img/mml/academia-mobile.avif" alt="akademia-mobile">
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <!-- LOGO PRESENTATION -->
-   <section id="visual">
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-               <div class="logo-mml__wrapper">
-                  <div class="wrapper__title">
-                     <h2>MindMapsLab Logo</h2>
-                  </div>
-
-                  <p>During work on the Academy page, I designed the logotype for MindMapsLab.</p>
-
-                  <div class="plaszka__wrapper">
-                     <div class="logo-mml-features">
-
-                        <div class="logo-mml-features__items">
-
-                           <div class="logo-mml-features__item">
-                              <img src="img/mml/logo-color.svg" alt="">
-                              <div class="logo-mll-feature__text">Individual color
-                                 for each product</div>
-                           </div>
-
-                           <div class="logo-mml-features__item">
-                              <img src="img/mml/logo-structure.svg" alt="">
-                              <div class="logo-mll-feature__text">Informative, consistent
-                                 and scalable logo structure</div>
-                           </div>
-
-                        </div>
-                        <div class="logo-mml-features__image"><img src="img/mml/logo-graphic.avif" alt=""
-                              class="logo-mml-features__image"></div>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <!-- MindMapsLab__MOCKUPS -->
-   <section>
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-
-               <div class="wrapper__title">
-                  <h2>MindMapsLab Website</h2>
-               </div>
-               <p>After developing the Academy page, I designed and implemented the homepage as a hub for the
-                  organization’s products and free content for consumer education and product promotion.
-               </p>
-               <a href="https://www.mindmapslab.pl" target="_blank" class="link">See MindMapsLab website ↗</a>
-               <div class="device-mockups device-mockups--top3">
-                  <div class="device-mockups__desktop"><img src="img/mml/mindmapslab-desktop.avif"
-                        alt="akademia-desktop">
-                  </div>
-                  <div class="device-mockups__mobile"><img src="img/mml/mindmapslab-mobile.avif" alt="akademia-mobile">
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-   <!-- WHAT'S NEXT -->
-   <section>
-      <div class="wrapper16px">
-         <div class="contener">
-            <div class="wrapper40px">
-
-               <div class="wrapper__title">
-                  <h2>Corporate trainings website</h2>
-               </div>
-               <p>Website development is in progress...
-               </p>
-
-            </div>
-         </div>
-      </div>
-   </section>
-
-
-
-   <div class="wrapper40px">
-      <div style="display:flex; justify-content:center;"><a href="cleaning-instruction.html"
-            class="link link--white-link">Digital
-            instruction for cleaners -></a></div>
-   </div>
-
-
-   <!--SCRIPT-->
-   <script src="js/script.js"></script>
+   <script type="module" src="js/onload-animation.js"></script>
 </body>
 
 </html>
