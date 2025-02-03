@@ -11,6 +11,7 @@
    "author": "",
    "license": "ISC",
    "dependencies": {
+      "@parcel/optimizer-image": "^2.13.3",
       "bootstrap": "^5.3.0",
       "gh-pages": "^5.0.0",
       "gsap": "^3.12.7",
@@ -19,6 +20,7 @@
    },
    "devDependencies": {
       "@parcel/transformer-sass": "^2.9.1",
-      "parcel": "^2.12.0"
+      "parcel": "^2.13.3",
+      "sharp": "^0.33.5"
    }
 }
