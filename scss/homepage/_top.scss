@@ -1,11 +1,11 @@
 .portfolio {
-   &__big-job {
-      width: 25.5vw;
+   &__small-jobs {
+      width: 26vw;
    }
 
    &__core-job-details {
       width: 100%;
-      padding-top: 6.3vw;
+      padding-top: 7.1vw;
       grid-row: span 2;
    }
 }
@@ -13,8 +13,8 @@
 //950px _____________________
 @media (max-width: 950px) {
    .portfolio {
-      &__big-job {
-         width: 45vw;
+      &__small-jobs {
+         width: 44.5vw;
       }
       &__core-job-details {
          padding-top: 0rem;
