@@ -35,10 +35,10 @@ body {
 
 //HEADING 1______________________________________________
 h1 {
-   font-size: clamp(56px, 5.7vw, 1000px);
+   font-size: clamp(44px, 4.1vw, 1000px);
    font-weight: 400;
-   line-height: 100%;
-   letter-spacing: -0.06em;
+   line-height: 110%;
+   letter-spacing: -0.05em;
 
    span {
       color: $accent;
@@ -46,7 +46,20 @@ h1 {
 }
 @media (max-width: 950px) {
    h1 {
-      font-size: clamp(40px, 6vw, 100px);
+      font-size: clamp(30px, 4.7vw, 100px);
+   }
+}
+
+//HEADING 2______________________________________________
+h2 {
+   font-size: clamp(40px, 3.8vw, 900px);
+   font-weight: 400;
+   line-height: 100%;
+   letter-spacing: -0.05em;
+}
+@media (max-width: 950px) {
+   h2 {
+      font-size: clamp(25px, 4vw, 100px);
    }
 }
 

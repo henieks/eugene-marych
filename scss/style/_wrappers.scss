@@ -9,17 +9,17 @@ body {
    padding: 2.5rem 2.5rem;
 }
 
+//750px
+@media (max-width: 750px) {
+   .padding-global {
+      padding: 1rem 1rem;
+   }
+}
+
 //650px-exeption
 @media (max-width: 650px) {
    .padding-global--projects {
       padding-top: 0rem;
-   }
-}
-
-//550px
-@media (max-width: 550px) {
-   .padding-global {
-      padding: 1rem 1rem;
    }
 }
 
