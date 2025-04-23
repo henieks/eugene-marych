@@ -51,10 +51,13 @@
 
 @media (max-width: 950px) {
    .projects {
-      padding-top: 2.5rem;
+      padding-top: 2rem;
       padding-bottom: 2.5rem;
-      gap: 4rem;
-
+      gap: 5rem;
+      &__h2 {
+         width: 100%;
+         text-align: center;
+      }
       &__group {
          width: 100%;
          align-items: start;
