@@ -35,8 +35,8 @@ body {
 
 //HEADING 1______________________________________________
 h1 {
-   font-size: clamp(44px, 4.1vw, 1000px);
-   font-weight: 400;
+   font-size: clamp(44px, 4.1vw, 1000rem);
+   font-weight: 380;
    line-height: 110%;
    letter-spacing: -0.05em;
 
@@ -46,14 +46,14 @@ h1 {
 }
 @media (max-width: 950px) {
    h1 {
-      font-size: clamp(30px, 4.7vw, 100px);
+      font-size: clamp(30px, 4.7vw, 1000rem);
    }
 }
 
 //HEADING 2______________________________________________
 h2 {
-   font-size: clamp(40px, 3.8vw, 900px);
-   font-weight: 400;
+   font-size: clamp(38px, 3.8vw, 900rem);
+   font-weight: 380;
    line-height: 100%;
    letter-spacing: -0.05em;
 }

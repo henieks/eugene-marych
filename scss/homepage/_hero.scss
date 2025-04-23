@@ -4,7 +4,6 @@
 
    &__wrapper {
       height: 100dvh;
-      position: relative;
    }
 
    &__content {
@@ -27,6 +26,7 @@
    &__image {
       display: flex;
       max-width: 23%;
+      height: 100%;
       overflow: hidden;
       img {
          width: 100%;
