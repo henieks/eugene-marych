@@ -48,6 +48,11 @@
 
       z-index: 2;
    }
+   &__navigation-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+   }
 }
 
 //950px _____________________
