@@ -1,9 +1,9 @@
-@import "style/reset";
-@import "style/variables";
+@use "style/reset";
+@use "style/variables";
 
-@import "style/text";
-@import "style/wrappers";
-@import "style/links";
-@import "style/button";
+@use "style/text";
+@use "style/wrappers";
+@use "style/links";
+@use "style/button";
 
-@import "style/onload-animation";
+@use "style/onload-animation";

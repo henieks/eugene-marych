@@ -1,5 +1,5 @@
-@import "style/variables";
+@use "style/variables" as *;
 
-@import "projects/header";
-@import "projects/slides";
-@import "projects/footer";
+@use "projects/header";
+@use "projects/slides";
+@use "projects/footer";

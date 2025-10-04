@@ -1,4 +1,4 @@
-@import "style/variables";
+@use "style/variables" as *;
 
-@import "homepage/hero";
-@import "homepage/projects";
+@use "homepage/hero";
+@use "homepage/projects";
