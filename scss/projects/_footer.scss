@@ -7,9 +7,10 @@
       align-items: center;
    }
 
-   &__CTA-wrapper {
+   &__cta-wrapper {
       display: flex;
       flex-direction: column;
+      gap: 0.5rem;
    }
 }
 .next-project-link {
