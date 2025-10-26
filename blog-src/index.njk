@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="stylesheet" href="../scss/style.scss">
+  <link rel="stylesheet" href="../scss/homepage.scss">
+
+  <title>Blog</title>
+  <style>
+    body { max-width: 72ch; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; font-family: system-ui, sans-serif; }
+    a { text-decoration: none; }
+    .post { margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<p><a class="link link--nav" href="/">← Back</a></p>
+  <h1>Blog</h1>
+  <div>
+    {% for post in collections.all | reverse %}
+      {% if post.inputPath.endsWith('/posts/hello.md') or post.inputPath.includes('/posts/') %}
+        <div class="post">
+          <a class="link" href="{{ post.url | url }}">{{ post.data.title or post.fileSlug }}</a>
+          {% if post.date %}<div style="color:#666;font-size:.9rem">{{ post.date | ruDate }}</div>{% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</body>
+</html>
