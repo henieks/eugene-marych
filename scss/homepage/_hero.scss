@@ -27,7 +27,8 @@
 
    &__image {
       display: flex;
-      max-width: 24%;
+      //max-width: 24%;
+      max-width: 22vw;
       overflow: hidden;
 
       position: absolute;
@@ -51,7 +52,7 @@
    &__navigation-column {
       display: flex;
       flex-direction: column;
-      gap: 0.9rem;
+      gap: 0.8rem;
    }
 }
 
